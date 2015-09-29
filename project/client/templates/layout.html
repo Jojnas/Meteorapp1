@@ -1,7 +1,12 @@
 <body>
-{{renderPage}}
+    {{renderPage}}
 </body>
 
 <template name="layout">
-    {{> yield}}
+    {{> navbar}}
+        <div class="row">
+            <div class="col-md-12">
+              {{> yield}}
+            </div>
+        </div>
 </template>
