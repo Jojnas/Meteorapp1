@@ -1,3 +1,7 @@
-/**
- * Created by User1 on 9/28/2015.
- */
+Template.posts.helpers({
+
+   posts: function(){
+
+       return Posts.find({}, {sort:{createdAt: -1}})
+   }
+});

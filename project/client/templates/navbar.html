@@ -14,12 +14,14 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="{{pathFor 'posts'}}">Home</a></li>
                     <li><a href="{{pathFor 'about'}}">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="sign-in">Sign In</a></li>
+                    <li>{{> loginButtons}}</li>
+                    {{#if currentUser}}
                     <li><a href="profile">Edit Profile</a></li>
+                    {{/if}}
                 </ul>
+
             </div><!--/.nav-collapse -->
         </div>
     </nav>

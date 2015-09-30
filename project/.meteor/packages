@@ -22,6 +22,9 @@ iron:router
 ejson
 nemo64:bootstrap
 twbs:bootstrap
-accounts-ui
 accounts-password
-joshowens:accounts-entry
+accounts-ui
+cfs:standard-packages
+cfs:gridfs
+aldeed:collection2
+aldeed:autoform
