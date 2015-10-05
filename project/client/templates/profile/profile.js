@@ -14,7 +14,7 @@ Template.profile.events({
 
                     UserImages.insert({
                         userId: Meteor.userId(),
-                        username: Meteor.user().username,
+                        username: Meteor.user().emails[0],
                         image: imageLoc
                     });
 

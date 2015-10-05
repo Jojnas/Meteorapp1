@@ -6,10 +6,10 @@ Router.configure({
 Router.map(function(){
     // posts route
     this.route('posts',{
-    path: '/',
-    template: 'posts'
+        path: '/',
+        template: 'posts'
     });
-   // about route
+    // about route
     this.route('about');
 
     // profile route

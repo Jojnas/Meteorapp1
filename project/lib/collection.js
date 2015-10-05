@@ -5,7 +5,7 @@ ProfileImages = new FS.Collection("ProfileImages", {
 
 UserImages = new Mongo.Collection("UserImages");
 
-Posts = new Mongo.Collection("posts")
+Posts = new Mongo.Collection("posts");
 
 Posts.attachSchema(new SimpleSchema({
     body: {
@@ -19,7 +19,7 @@ Posts.attachSchema(new SimpleSchema({
 
     username: {
         type: String,
-       // autoValue: function(){return Meteor.users.findOne({_id: this.userId}).username}
+        autoValue: function(){return Meteor.users.findOne({_id: this.userId}).emails[0]}
     },
 
     createdAt: {

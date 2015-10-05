@@ -1,9 +1,9 @@
 Meteor.startup(function() {
-   AccountsEntry.config({
+  /* AccountsEntry.config({
        homeRoute: '/',
        dashboardRoute: '/',
        passwordSignUpFields: 'USERNAME_AND_EMAIL'
-   });
+   });*/
 
     Accounts.ui.config({
         passwordSignUpFields: 'USERNAME_AND_EMAIL'
